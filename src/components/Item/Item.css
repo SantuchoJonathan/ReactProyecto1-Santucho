@@ -1,0 +1,13 @@
+.card {
+  background-color: rgba(41, 35, 35, 0.062);
+  margin: 5px;
+  width: 400px;
+  border-radius: 10px;
+  background-color: blue;
+  box-shadow: 10px 0px 15px rgba(0, 0, 0, 0.425);
+}
+
+.card :hover{
+    cursor: pointer;
+}
+

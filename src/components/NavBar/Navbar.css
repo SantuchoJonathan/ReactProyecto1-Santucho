@@ -1,0 +1,8 @@
+.navbarContent {
+    justify-content: flex-end;
+  }
+  
+  .NavLink {
+    margin: 1px;
+    text-decoration: underline;
+  }
