@@ -1,13 +1,23 @@
 import ItemCount from "../ItemCount/ItemCount";
 import { useState } from "react";
-import './ItemDetail.css'
+import "./ItemDetail.css";
 
-const ItemDetail = ({ name, img, price, category, description, stock }) => {
+const ItemDetail = ({ id, name, img, price, description, stock, setCart }) => {
   const [quantity, setQuantity] = useState(0);
 
   const handleOnAdd = (quantity) => {
+    console.log(quantity)
     setQuantity(quantity);
+
+    const objProduct = {
+      id, name, price, quantity,
+    };
+
+    setCart(prev => {
+      console.log(prev)
+      return [...prev, objProduct]});
   };
+
   return (
     <div className="cardDetail">
       <h1>{name}</h1>
