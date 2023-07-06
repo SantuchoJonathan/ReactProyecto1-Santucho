@@ -1,21 +1,25 @@
 import ItemCount from "../ItemCount/ItemCount";
 import { useState } from "react";
 import "./ItemDetail.css";
+import { useCart } from "../../context/CartContext";
 
-const ItemDetail = ({ id, name, img, price, description, stock, setCart }) => {
+const ItemDetail = ({ id, name, img, price, description, stock }) => {
   const [quantity, setQuantity] = useState(0);
 
+  const { addItem } = useCart();
+
   const handleOnAdd = (quantity) => {
-    console.log(quantity)
+    console.log(quantity);
     setQuantity(quantity);
 
     const objProduct = {
-      id, name, price, quantity,
+      id,
+      name,
+      price,
+      quantity,
     };
 
-    setCart(prev => {
-      console.log(prev)
-      return [...prev, objProduct]});
+    addItem(objProduct);
   };
 
   return (
