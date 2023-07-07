@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import './Navbar.css'
+import "./Navbar.css";
 
 const Menu = () => {
   return (
@@ -22,15 +22,9 @@ const Menu = () => {
               title="Productos"
               id="navbarScrollingDropdown"
             >
-              <NavDropdown.Item href="/category/extintor">
-                Extintores
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/category/manguera">
-                Mangueras
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/category/gabinetes">
-                Gabinetes
-              </NavDropdown.Item>
+              <NavDropdown.Item href="/category/extintor">Extintores</NavDropdown.Item>
+              <NavDropdown.Item href="/category/manguera">Mangueras</NavDropdown.Item>
+              <NavDropdown.Item href="/category/gabinetes">Gabinetes</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link className="NavLink" href="#Contacto">
               Contacto
