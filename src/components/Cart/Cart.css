@@ -1,0 +1,48 @@
+.pagina {
+  text-align: center;
+}
+
+.cardCompra {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  margin: 15px 40px;
+  box-shadow: 1px 1px 1px 1px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 240);
+  min-height: 70px;
+}
+
+.cardCompra h3 {
+  width: 25%;
+  font-size: medium;
+  text-align: center;
+}
+
+.totalCompra {
+  font-size: x-large;
+  margin-bottom: 20px;
+}
+
+.buttonCheckout,
+.buttonNoProducts {
+  border: solid black 1px;
+  background-color: rgb(225, 225, 233);
+  border-radius: 4px;
+  box-shadow: 5px 0px 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  margin: 0px 5px;
+}
+
+.noProducts {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+

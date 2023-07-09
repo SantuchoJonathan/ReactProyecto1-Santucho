@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { getDocs, collection, query, where } from "firebase/firestore";
 import { db } from "../../services/firebase/firebaseConfig";
 import "./ItemListContainer.css";
+import Loading from "./Loading";
 
 const ItemListContainer = ({ greeting }) => {
   const [products, setProducts] = useState([]);
@@ -33,7 +34,7 @@ const ItemListContainer = ({ greeting }) => {
   }, [categoryId]);
 
   if (loading) {
-    return <h1>Loading...</h1>;
+    return( <Loading />)
   }
 
   return (
