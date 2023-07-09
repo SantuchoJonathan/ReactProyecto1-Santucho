@@ -22,14 +22,12 @@ const ItemDetail = ({ id, name, img, price, description, stock }) => {
     };
 
     addItem(objProduct);
-    if (id == id.card)
-      setNotification(
-        "success",
-        `Se agrego correctamente ${quantity} ${name} al carrito`
-      );
-    else {
-      setNotification("success", `Este producto no se puede agregar. Producto repetido`);
-    }
+
+
+    setNotification(
+      "success",
+      `Se agrego correctamente ${quantity} ${name} al carrito`
+    );
   };
 
   return (
